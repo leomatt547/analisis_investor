@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_list_investor" model="ir.actions.act_window">
+        <field name="name">Daftar Investor</field>
+        <field name="res_model">investors.investor</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_list_investor_omzet" model="ir.actions.act_window">
+        <field name="name">Daftar Omzet Investor</field>
+        <field name="res_model">investors.investor.omzet</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--record id="action_list_cat_type" model="ir.actions.act_window">
+        <field name="name">Daftar Jenis Kucing</field>
+        <field name="res_model">cats.cat.type</field>
+        <field name="view_mode">tree,form</field>
+    </record-->
+
+    <menuitem id="investors_root_menu" 
+        name="Investors"
+        sequence="1"/>
+
+    <menuitem id="investors_investor_menu" 
+        name="Daftar Investor"
+        parent="investors_root_menu"
+        action="action_list_investor"
+        sequence="1"/>
+
+    <menuitem id="investors_investor_omzet_menu" 
+        name="Analisis Omzet Investor"
+        parent="investors_root_menu"
+        action="action_list_investor_omzet"
+        sequence="1"/>
+
+    <!--menuitem id="cats_cat_type_menu" 
+        name="Daftar Jenis Kucing"
+        parent="cats_root_menu"
+        action="action_list_cat_type"
+        sequence="2"/-->
+</odoo>

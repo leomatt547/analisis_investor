@@ -2,7 +2,7 @@
 <odoo>
     <data>
         
-        <!-- Jenis -->
+        <!-- Jenis >
         <record id='cats_cat_type1' model='cats.cat.type'>
             <field name='name' type='char'>Persian</field>
         </record>
@@ -13,7 +13,7 @@
             <field name='name' type='char'>British Shorthair</field>
         </record>
         
-        <!-- Kucing -->
+        <Kucing>
         <record id='cats_cat1' model='cats.cat'>
             <field name='name' type='char'>Kucing 1</field>
             <field name='color' type='char'>0</field>
@@ -38,7 +38,7 @@
             <field name='name' type='char'>Kucing 5</field>
             <field name='color' type='char'>4</field>
             <field name='type' ref='cats_cat_type3'/>
-        </record>
+        </record-->
 
     </data>
 </odoo>
