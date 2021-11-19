@@ -1,3 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-investors_investor_manager,Investors Investor Manager,model_investors_investor,,1,1,1,1
-investors_investor_omzet_manager,Investors Investor Omzet Manager,model_investors_investor_omzet,,1,1,1,1
+access_admin,Access Manager,model_investors_investor,,1,1,1,0
+access_user,Access user,model_investors_investor,,1,1,1,1
+access_admin_omzet,Access Manager Omzet,model_investors_investor_omzet,,1,1,1,0
+access_user_omzet,Access user Omzet,model_investors_investor_omzet,,1,1,1,1

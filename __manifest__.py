@@ -10,6 +10,7 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
+        'security/account_security.xml',
         'views/investors_menus.xml',
         'views/investors_trees.xml',
         'views/investors_forms.xml',
