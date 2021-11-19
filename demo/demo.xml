@@ -1,7 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        
+        <!--Investor-->
+        <record id='1' model='investors.investor'>
+            <field name="nama" type='char'>PT Anabatic Technologies Tbk</field>
+            <field name="alamat">Graha Anabatic Jl. Scientia Boulevard Kav U2 Summarecon Serpong Tangerang, Banten - Indonesia</field>
+            <field name="email" type='char'>marketing@anabatic.com</field>
+            <field name="pendapatan" type='float'>2689025902504</field>
+            <field name="current_asset" type='float'>2409791384087</field>
+            <field name="total_asset" type='float'>3749258664654</field>
+            <field name="current_liabilities" type='float'>3159103246925</field>
+        </record>
+        <record id='2' model='investors.investor'>
+            <field name="nama" type='char'>PT BUKALAPAK.COM TBK.</field>
+            <field name="alamat">Metropolitan Tower 22nd Floor, Jl. R.A. Kartini No.Kav. 14, RT.10/RW.4, West Cilandak, Cilandak, South Jakarta City, Jakarta 12430</field>
+            <field name="email" type='char'>cs.mitra@bukalapak.com</field>
+            <field name="pendapatan" type='float'>863620349000</field>
+            <field name="current_asset" type='float'>3116660895000</field>
+            <field name="total_asset" type='float'>4043953825000</field>
+            <field name="current_liabilities" type='float'>927246326000</field>
+        </record>
+        <record id='3' model='investors.investor'>
+            <field name="nama" type='char'>PT Cashlez Worldwide Indonesia Tbk</field>
+            <field name="alamat">Podomoro City, Central Park, Garden Shopping Arcade B-08 BA Jl. Letjen S. Parman Kav 28 Jakarta Barat 11470, Indonesia</field>
+            <field name="email" type='char'>ask.cashlez@gmail.com</field>
+            <field name="pendapatan" type='float'>58794930549</field>
+            <field name="current_asset" type='float'>94533083727</field>
+            <field name="total_asset" type='float'>165340080518</field>
+            <field name="current_liabilities" type='float'>53838759599</field>
+        </record>
+        <record id='4' model='investors.investor'>
+            <field name="nama" type='char'>PT Distribusi Voucher Nusantara Tbk</field>
+            <field name="alamat">AXA Tower 7th Floor, Suite 5, Kuningan City, Jl. Prof. Dr. Satrio Kav. 18, Setiabudi, South Jakarta, DKI Jakarta, 12940</field>
+            <field name="email" type='char'>corporate@ptdvn.com</field>
+            <field name="pendapatan" type='float'>2397889734212</field>
+            <field name="current_asset" type='float'>1660935327023</field>
+            <field name="total_asset" type='float'>1844379194811</field>
+            <field name="current_liabilities" type='float'>254687513281</field>
+        </record>
+        <record id='5' model='investors.investor'>
+            <field name="nama" type='char'>PT Digital Mediatama Maxima Tbk</field>
+            <field name="alamat">Mangkuluhur City Tower One 18th Floor Jl. Jend. Gatot Subroto Kav. 1-3. Jakarta Selatan, DKI Jakarta 12930, Indonesia</field>
+            <field name="email" type='char'>investor.relation@dmmgroup.id</field>
+            <field name="pendapatan" type='float'>363576511507</field>
+            <field name="current_asset" type='float'>683462706231</field>
+            <field name="total_asset" type='float'>928444137929</field>
+            <field name="current_liabilities" type='float'>76851147527</field>
+        </record>
+        <record id='6' model='investors.investor'>
+            <field name="nama" type='char'>PT Indointernet Tbk</field>
+            <field name="alamat">Jl. Rempoa Raya No. 11 Rempoa, Ciputat Timur, Tangerang Selatan, Banten 15412, Indonesia</field>
+            <field name="email" type='char'>corporate.secretary@indonet.id</field>
+            <field name="pendapatan" type='float'>290354813519</field>
+            <field name="current_asset" type='float'>442607169428</field>
+            <field name="total_asset" type='float'>1293017155302</field>
+            <field name="current_liabilities" type='float'>312922357591</field>
+        </record>
+        <record id='7' model='investors.investor'>
+            <field name="nama" type='char'>Elang Mahkota Teknologi Tbk</field>
+            <field name="alamat">SCTV TOWER, 18TH FLOOR, SENAYAN CITY, Jl. Asia Afrika Lot 19, Jakarta 10270, Indonesia</field>
+            <field name="email" type='char'>investor.relation@emtek.co.id</field>
+            <field name="pendapatan" type='float'>6449064546000</field>
+            <field name="current_asset" type='float'>12962674824000</field>
+            <field name="total_asset" type='float'>25884635050000</field>
+            <field name="current_liabilities" type='float'>1982489384000</field>
+        </record>
+        <record id='8' model='investors.investor'>
+            <field name="nama" type='char'>PT Galva Technologies Tbk</field>
+            <field name="alamat">Gedung Galva, Jl. Hayam Wuruk No. 27, Gambir, Jakarta Pusat 10120, Indonesia</field>
+            <field name="email" type='char'>gtc.secretary@galva.co.idd</field>
+            <field name="pendapatan" type='float'>650137000000</field>
+            <field name="current_asset" type='float'>426660000000</field>
+            <field name="total_asset" type='float'>459693000000</field>
+            <field name="current_liabilities" type='float'>251426000000</field>
+        </record>
+        <record id='9' model='investors.investor'>
+            <field name="nama" type='char'>PT Hensel Davest Indonesia Tbk</field>
+            <field name="alamat">Prudential Centre 22nd Floor Jl Casablanca Raya Kav. 88, Jakarta Selatan 12870, Indonesia</field>
+            <field name="email" type='char'>biz@hdi.co.id</field>
+            <field name="pendapatan" type='float'>1235197914474</field>
+            <field name="current_asset" type='float'>328407426058</field>
+            <field name="total_asset" type='float'>398458607853</field>
+            <field name="current_liabilities" type='float'>32878892108</field>
+        </record>
+        <record id='10' model='investors.investor'>
+            <field name="nama" type='char'>PT Kioson Komersial Indonesia Tbk</field>
+            <field name="alamat">AXA Tower, 42th Floor, Jl. Professor Dr. Satrio Kav. 18, South Jakarta, DKI Jakarta 10130, Indonesia</field>
+            <field name="email" type='char'>corsec@kioson.com</field>
+            <field name="pendapatan" type='float'>175434304832</field>
+            <field name="current_asset" type='float'>47659087541</field>
+            <field name="total_asset" type='float'>65223246591</field>
+            <field name="current_liabilities" type='float'>4587901239</field>
+        </record>
         <!-- Jenis >
         <record id='cats_cat_type1' model='cats.cat.type'>
             <field name='name' type='char'>Persian</field>
