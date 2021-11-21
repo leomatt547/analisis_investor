@@ -17,6 +17,7 @@ class Investor(models.Model):
 class InvestorOmzet(models.Model):
     _name = 'investors.investor.omzet'
     _description = 'Menyimpan Basis data untuk analisis omzet investor'
+    _order = 'pendapatan desc'
 
     nama = fields.Char(string="Nama", required=True)
     alamat = fields.Text(string="Alamat", required=False)
