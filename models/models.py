@@ -38,7 +38,11 @@ class InvestorDayaBayar(models.Model):
     @api.depends('current_asset', 'current_liabilities')
     def _compute_current_ratio(self):
         for x in self:
-            x.current_ratio = x.current_asset/x.current_liabilities
+            if x.current_asset and x.current_liabilities:
+                x.current_ratio = x.current_asset/x.current_liabilities
+            else:
+                x.current_ratio = 0.0
+            
     def _search_ratio(self, operator, value):
         return [('name', operator, value)]
 
