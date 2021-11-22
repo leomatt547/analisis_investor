@@ -49,7 +49,7 @@ class InvestorDayaBayar(models.Model):
     current_ratio = fields.Float(string="Current Ratio", compute='_compute_current_ratio', store=True, search='_search_ratio')
 
 class InverstorKesehatanKeuangan(models.Model):
-    _name = 'investors.investor.kesehatankuangan'
+    _name = 'investors.investor.kesehatankeuangan'
     _description = 'Menyimpan Basis data untuk analisis kesehatan keuangan'
     _order = 'current_turnover desc'
     
@@ -60,7 +60,7 @@ class InverstorKesehatanKeuangan(models.Model):
     total_asset = fields.Float(string="Asset", required=True)
     # total_asset_turnover_ratio = fields.Float(string="Turnover", required=True)
 
-    @api.depends('total_asset', 'total_asset_turnover_ratio')
+    @api.depends('total_asset', 'total_asset')
     def _compute_current_turnover(self):
         for x in self:
             if x.pendapatan and x.total_asset:
@@ -70,6 +70,8 @@ class InverstorKesehatanKeuangan(models.Model):
     
     def _search_turnove(self, operator, value):
         return [('name'), operator, value]
+
+    current_turnover = fields.Float(string="Current Turnover", compute='_compute_current_turnover', store=True, search='_search_turnove')
 
 '''
 class Cat(models.Model):

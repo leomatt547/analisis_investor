@@ -52,6 +52,12 @@
         action="action_list_investor_dayabayar"
         sequence="1"/>
 
+    <menuitem id="investors_investor_kesehatankeuangan_menu" 
+        name="Analisis Kesehatan Keuangan Investor"
+        parent="investors_root_menu"
+        action="action_list_investor_kesehatankeuangan"
+        sequence="1"/>
+
     <!--menuitem id="cats_cat_type_menu" 
         name="Daftar Jenis Kucing"
         parent="cats_root_menu"
