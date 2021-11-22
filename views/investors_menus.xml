@@ -18,6 +18,12 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="action_list_investor_kesehatankeuangan" model="ir.actions.act_window">
+        <field name="name">Daftar Kesehatan Keuangan Investor</field>
+        <field name="res_model">investors.investor.kesehatankeuangan</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <!--record id="action_list_cat_type" model="ir.actions.act_window">
         <field name="name">Daftar Jenis Kucing</field>
         <field name="res_model">cats.cat.type</field>

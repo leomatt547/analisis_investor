@@ -48,6 +48,22 @@
     </field>
   </record>
 
+  <record model="ir.ui.view" id="investors_investor_kesehatankeuangan_tree">
+    <field name="name">investors.investor.kesehatankeuangan.tree</field>
+    <field name="model">investors.investor.kesehatankeuangan</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="nama"/>
+        <field name="alamat"/>
+        <field name="email"/>
+        <field name="pendapatan"/>
+        <field name="total_asset"/>
+        <field name="current_turnover"/>
+      </tree>
+    </field>
+  </record>
+
   <!--record model="ir.ui.view" id="cats_cat_type_tree">
     <field name="name">cats.cat.type.tree</field>
     <field name="model">cats.cat.type</field>
