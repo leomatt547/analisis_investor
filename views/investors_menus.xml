@@ -12,6 +12,12 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="action_list_investor_dayabayar" model="ir.actions.act_window">
+        <field name="name">Daftar Daya Bayar Investor</field>
+        <field name="res_model">investors.investor.dayabayar</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <!--record id="action_list_cat_type" model="ir.actions.act_window">
         <field name="name">Daftar Jenis Kucing</field>
         <field name="res_model">cats.cat.type</field>
@@ -32,6 +38,12 @@
         name="Analisis Omzet Investor"
         parent="investors_root_menu"
         action="action_list_investor_omzet"
+        sequence="1"/>
+
+    <menuitem id="investors_investor_dayabayar_menu" 
+        name="Analisis Daya Bayar Investor"
+        parent="investors_root_menu"
+        action="action_list_investor_dayabayar"
         sequence="1"/>
 
     <!--menuitem id="cats_cat_type_menu" 

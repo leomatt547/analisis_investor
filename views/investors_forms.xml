@@ -40,6 +40,26 @@
     </field>
   </record>
 
+  <record model="ir.ui.view" id="investors_investor_dayabayar_form">
+    <field name="name">investors.investor.dayabayar.form</field>
+    <field name="model">investors.investor.dayabayar</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <field name="nama"/>
+            <field name="alamat"/>
+            <field name="email"/>
+            <field name="current_asset"/>
+            <field name="current_liabilities"/>
+            <field name="current_ratio"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
 
   <!--record model="ir.ui.view" id="cats_cat_type_form">
     <field name="name">cats.cat.type.form</field>

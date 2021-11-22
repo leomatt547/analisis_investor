@@ -3,3 +3,5 @@ access_admin,Access Manager,model_investors_investor,,1,1,1,0
 access_user,Access user,model_investors_investor,,1,1,1,1
 access_admin_omzet,Access Manager Omzet,model_investors_investor_omzet,,1,1,1,0
 access_user_omzet,Access user Omzet,model_investors_investor_omzet,,1,1,1,1
+access_admin_dayabayar,Access Manager Daya Bayar,model_investors_investor_dayabayar,,1,1,1,0
+access_user_dayabayar,Access user Daya Bayar,model_investors_investor_dayabayar,,1,1,1,1

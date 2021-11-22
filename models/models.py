@@ -24,6 +24,27 @@ class InvestorOmzet(models.Model):
     email = fields.Char(string="Email", required=False)
     pendapatan = fields.Float(string="Pendapatan", required=True)
 
+class InvestorDayaBayar(models.Model):
+    _name = 'investors.investor.dayabayar'
+    _description = 'Menyimpan Basis data untuk analisis daya bayar investor'
+    _order = 'current_ratio desc'
+
+    nama = fields.Char(string="Nama", required=True)
+    alamat = fields.Text(string="Alamat", required=False)
+    email = fields.Char(string="Email", required=False)
+    current_asset = fields.Float(string="Current Asset", required=True)
+    current_liabilities = fields.Float(string="Current Liabilities", required=True, store=True)
+
+    @api.depends('current_asset', 'current_liabilities')
+    def _compute_current_ratio(self):
+        for x in self:
+            x.current_ratio = x.current_asset/x.current_liabilities
+    def _search_ratio(self, operator, value):
+        return [('name', operator, value)]
+
+    current_ratio = fields.Float(string="Current Ratio", compute='_compute_current_ratio', store=True, search='_search_ratio')
+
+    
 '''
 class Cat(models.Model):
     _name = 'cats.cat'
